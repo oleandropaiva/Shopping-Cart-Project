@@ -72,10 +72,15 @@ function removeRefresh() {
 
 window.onload = async () => {
   const lista = document.getElementById('items');
+  const paragraph = document.createElement('p');
+  paragraph.innerHTML = 'carregando...';
+  paragraph.className = 'loading';
+  lista.appendChild(paragraph);
   const products = await fetchProducts('computador');
   products.forEach((element) => {
     lista.appendChild(createProductItemElement(element));
   });
+  paragraph.remove();
   addEventBtn();
   listCart.innerHTML = getSavedCartItems();
   removeRefresh();

@@ -1,5 +1,3 @@
-const saveCartItems = require("./helpers/saveCartItems");
-
 const buttonAdd = document.getElementsByClassName('item__add');
 const listCart = document.querySelector('.cart__items');
 const emptyCart = document.querySelector('.empty-cart');
@@ -40,8 +38,8 @@ function getSkuFromProductItem(item) {
 
 function cartItemClickListener(event) {
   event.target.remove();
-  /* saveCartItems(listCart.innerHTML);
- */
+  saveCartItems(listCart.innerHTML);
+
 }
 
 function createCartItemElement({ id: sku, title: name, price: salePrice }) {

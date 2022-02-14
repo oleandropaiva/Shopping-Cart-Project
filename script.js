@@ -1,3 +1,5 @@
+const saveCartItems = require("./helpers/saveCartItems");
+
 const buttonAdd = document.getElementsByClassName('item__add');
 const listCart = document.querySelector('.cart__items');
 const emptyCart = document.querySelector('.empty-cart');
@@ -38,6 +40,8 @@ function getSkuFromProductItem(item) {
 
 function cartItemClickListener(event) {
   event.target.remove();
+  saveCartItems(listCart.innerHTML);
+
 }
 
 function createCartItemElement({ id: sku, title: name, price: salePrice }) {
@@ -52,6 +56,7 @@ async function addCart(event) {
   const clickButton = event.target.parentNode.firstChild.innerText;
   const item = await fetchItem(clickButton);
   listCart.appendChild(createCartItemElement(item));
+  saveCartItems(listCart.innerHTML);
 }
 
 function addEventBtn() {

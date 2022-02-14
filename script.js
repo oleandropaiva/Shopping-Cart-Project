@@ -81,3 +81,5 @@ window.onload = async () => {
   listCart.innerHTML = getSavedCartItems();
   removeRefresh();
  };
+
+  /*  Recebi ajuda do aluno Sandro Bistene Turma 19-C na semana OnTrack */

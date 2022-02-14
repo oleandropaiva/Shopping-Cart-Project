@@ -14,3 +14,5 @@ const fetchProducts = async (item) => {
       fetchProducts,
     };
   }
+
+   /*  Recebi ajuda do aluno Sandro Bistene Turma 19-C na semana OnTrack */

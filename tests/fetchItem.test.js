@@ -24,3 +24,5 @@ describe('2 - Teste a função fecthItem', () => {
     expect(fetchSemArgumento).toEqual(erro);
 })
 });
+
+ /*  Recebi ajuda do aluno Sandro Bistene Turma 19-C na semana OnTrack */

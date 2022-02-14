@@ -13,3 +13,5 @@ describe('4 - Teste a função getSavedCartItems', () => {
     expect(localStorage.getItem).toBeCalledWith('carItems');
   });
  });
+
+  /*  Recebi ajuda do aluno Sandro Bistene Turma 19-C na semana OnTrack */

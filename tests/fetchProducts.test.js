@@ -24,3 +24,5 @@ it('Testa se ao chamar o fetchProducts sem argumento retorna um erro', async () 
   expect(fetchSemArgumento).toEqual(erro);  
 });
 });
+
+ /*  Recebi ajuda do aluno Sandro Bistene Turma 19-C na semana OnTrack */
